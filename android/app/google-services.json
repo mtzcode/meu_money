@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "991107430258",
+    "project_id": "meu-money-f3ab5",
+    "storage_bucket": "meu-money-f3ab5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:991107430258:android:8e892386c6c38721a58feb",
+        "android_client_info": {
+          "package_name": "com.mtzcode.meumoney"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDC4hFQFvGUQh5bYyhiSat6LO_OmxkgeeA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
