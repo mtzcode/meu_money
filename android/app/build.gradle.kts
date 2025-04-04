@@ -2,13 +2,14 @@ plugins {
     id("com.android.application")
     id("kotlin-android")
     id("dev.flutter.flutter-gradle-plugin")
-    id("com.google.gms.google-services") // plugin do Firebase
+    id("com.google.gms.google-services") // Plugin do Firebase
 }
 
 android {
-    namespace = "com.mtzcode.meumoney" // ajuste se o seu for diferente
+    namespace = "com.mtzcode.meumoney"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+
+    ndkVersion = "27.0.12077973" // ✅ Corrigido conforme recomendado
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -20,7 +21,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.mtzcode.meumoney" // mesmo aqui
+        applicationId = "com.mtzcode.meumoney"
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
@@ -29,6 +30,7 @@ android {
 
     buildTypes {
         release {
+            // Pode trocar para release depois com sua key de assinatura
             signingConfig = signingConfigs.getByName("debug")
         }
     }
